@@ -1,0 +1,39 @@
+{
+  "name": "Doors export links",
+  "description": "This Chrome extension creates links to Doors exports",
+  "homepage_url": "https://github.com/Mavrikant/Chrome-Extension-for-Doors-Exports",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "execute.js will run (watch the Chrome DevTools' console)"
+  },
+  "content_scripts": [
+    {
+      "run_at" : "document_start",
+      "js": ["before.js"],
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ]
+    },
+    {
+      "run_at" : "document_idle",
+      "js": ["after.js"],
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://jira.esensi.local/*",
+    "http://jira.esensi.local/*"
+  ]
+}
