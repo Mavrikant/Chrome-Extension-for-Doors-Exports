@@ -4,6 +4,9 @@
   "homepage_url": "https://github.com/Mavrikant/Chrome-Extension-for-Doors-Exports",
   "version": "0.0.1",
   "manifest_version": 3,
+  "icons": {
+    "210": "doors.png"
+  },
   "action": {
     "default_title": "execute.js will run (watch the Chrome DevTools' console)"
   },
