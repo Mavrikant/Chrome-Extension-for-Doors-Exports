@@ -8,7 +8,9 @@
     "210": "doors.png"
   },
   "action": {
-    "default_title": "execute.js will run (watch the Chrome DevTools' console)"
+    "default_title": "Doors export links",
+    "default_popup": "popup.html",
+    "default_icon": "doors.png"
   },
   "content_scripts": [
     {
@@ -32,8 +34,7 @@
     "service_worker": "background.js"
   },
   "permissions": [
-    "tabs",
-    "scripting"
+
   ],
   "host_permissions": [
     "https://jira.esensi.local/*",
