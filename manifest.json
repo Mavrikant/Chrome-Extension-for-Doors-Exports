@@ -23,6 +23,13 @@
       ]
     }
   ],
+  "web_accessible_resources": [{
+    "matches": [
+        "https://jira.esensi.local/*",
+        "http://jira.esensi.local/*"
+    ],
+    "resources": ["doors.png"]
+  }],
   "host_permissions": [
     "https://jira.esensi.local/*",
     "http://jira.esensi.local/*"
