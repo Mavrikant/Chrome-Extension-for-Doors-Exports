@@ -6,12 +6,12 @@
   "manifest_version": 3,
   "options_page": "options.html",
   "icons": {
-    "210": "doors.png"
+    "210": "images/doors.png"
   },
   "action": {
     "default_title": "Doors export links",
     "default_popup": "popup.html",
-    "default_icon": "doors.png"
+    "default_icon": "images/doors.png"
   },
   "content_scripts": [
     {
@@ -28,7 +28,7 @@
         "https://jira.esensi.local/*",
         "http://jira.esensi.local/*"
     ],
-    "resources": ["doors.png"]
+    "resources": ["images/doors.png"]
   }],
   "host_permissions": [
     "https://jira.esensi.local/*",
