@@ -90,36 +90,19 @@
         #footer {
             font-family: 'Enriqueta', arial, serif;
             vertical-align: middle;
-            font-size: 15px;
-            font-weight: bold;
-            white-space: nowrap;
-            color: white;
-
             display: flex;
             justify-content: center;
         }
-
-        a:link {
-            text-decoration: none;
+        .footerButton {
+            background-color: rgb(60, 209, 201);
             color: white;
-        }
-
-
-        a:visited {
+            padding: 15px;
+            margin: 1px;
+            text-align: center;
             text-decoration: none;
-            color: white;
-        }
-
-
-        a:hover {
-            text-decoration: none;
-            color: white;
-        }
-
-
-        a:active {
-            text-decoration: none;
-            color: white;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
         }
     </style>
     <script src="popup.js"></script>
@@ -137,13 +120,13 @@
     </br>
     </br>
 
-    <div id="footer"><a href="#" id="openExportServer" >Export server
-            <img src="doors.png" alt="Doors logo" style="height: 15px"></a></div>
-    <div id="footer"><a href="https://github.com/Mavrikant/Chrome-Extension-for-Doors-Exports" target="_blank"
-            rel="noopener noreferrer">Source code available on
-            <img src="GitHub-Logo.png" alt="GitHub-Logo" style="height: 15px"></a></div>
-    <div id="footer"><a href="options.html" target="_blank" rel="noopener noreferrer">Options
-            <img src="options.png" alt="Options logo" style="height: 15px"></a></div>
+    <div id="footer"><a class="footerButton" href="#" id="openExportServer" >
+            <img src="doors.png" alt="Doors logo" style="height: 20px"></br>Export server</a>
+    <a class="footerButton" href="https://github.com/Mavrikant/Chrome-Extension-for-Doors-Exports" target="_blank"
+            rel="noopener noreferrer">
+            <img src="GitHub-Logo.png" alt="GitHub-Logo" style="height: 20px"></br>Source code</a>
+    <a class="footerButton" href="options.html" target="_blank" rel="noopener noreferrer">
+            <img src="options.png" alt="Options logo" style="height: 20px"></br>Options</a></div>
     <script src="popup.js"></script>
 </body>
 
