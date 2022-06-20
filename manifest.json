@@ -2,8 +2,9 @@
   "name": "Doors export links",
   "description": "This Chrome extension creates links to Doors exports",
   "homepage_url": "https://github.com/Mavrikant/Chrome-Extension-for-Doors-Exports",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 3,
+  "options_page": "options.html",
   "icons": {
     "210": "doors.png"
   },
@@ -25,5 +26,8 @@
   "host_permissions": [
     "https://jira.esensi.local/*",
     "http://jira.esensi.local/*"
+  ],
+  "permissions": [
+    "storage"
   ]
 }
