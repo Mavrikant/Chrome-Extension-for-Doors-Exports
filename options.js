@@ -18,7 +18,7 @@ function save_options() {
 // stored in chrome.storage.
 function restore_options() {
   chrome.storage.sync.get({
-    serverPath: 'http://esen-1332:1111/',
+    serverPath: 'http://esen-1332:1111',
   }, function (items) {
     document.getElementById("serverPath").value = items.serverPath;
   });
